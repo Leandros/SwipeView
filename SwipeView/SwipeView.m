@@ -33,7 +33,7 @@
 
 #import "SwipeView.h"
 #import <objc/message.h>
-
+#import "ButtonFriendlyScrollView.h"
 
 #pragma GCC diagnostic ignored "-Wdirect-ivar-access"
 #pragma GCC diagnostic ignored "-Warc-repeated-use-of-weak"
@@ -103,7 +103,7 @@
     _defersItemViewLoading = NO;
     _vertical = NO;
     
-    _scrollView = [[UIScrollView alloc] init];
+    _scrollView = [[ButtonFriendlyScrollView alloc] init];
     _scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     _scrollView.autoresizesSubviews = YES;
     _scrollView.delegate = self;
