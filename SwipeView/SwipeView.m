@@ -293,18 +293,14 @@
 
 - (void)setFrame:(CGRect)rect
 {
-    if (_rect != rect) {
-        _rect = rect;
-        [self updateScrollViewDimensions];
-    }
+    [super setFrame:rect];
+    [self updateScrollViewDimensions];
 }
 
 - (void)setBounds:(CGRect)bounds
 {
-    if (_bounds != bounds) {
-        _bounds = bounds;
-        [self updateScrollViewDimensions];
-    }
+    [super setBounds:bounds];
+    [self updateScrollViewDimensions];
 }
 
 - (BOOL)isDragging
